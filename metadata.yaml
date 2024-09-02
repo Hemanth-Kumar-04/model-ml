@@ -1,0 +1,13 @@
+name: sign_language_model_deployment
+entry_point: my_deploy_function
+input:
+  - name: input_image
+    type: image
+output:
+  type: integer
+environment:
+  python_version: "3.10"
+  packages:
+    - tensorflow==2.17.0
+    - numpy==1.26.3
+    - pandas==2.2.0
